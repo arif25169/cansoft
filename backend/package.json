@@ -1,7 +1,7 @@
 {
-  "name": "node",
+  "name": "crud",
   "version": "1.0.0",
-  "description": "test project",
+  "description": "test crud project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

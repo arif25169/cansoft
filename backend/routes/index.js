@@ -1,12 +1,11 @@
 const routes = require('express').Router();
-const category = require('./category');
-const product = require('./product');
+const user = require('./user');
 
-routes.use(category);
-routes.use(product);
+
+routes.use(user);
 
 routes.get('/', (req, res) => {
-    res.status(200).json({ message: 'Welcome to home page.' });
+    res.status(200).json({ message: 'Api Is Working' });
 });
 
 module.exports = routes;
