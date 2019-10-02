@@ -21,5 +21,32 @@ const makeSelectCrudTest = () =>
 const makeSelectTableInfo = () =>
   createSelector(selectCrudTestDomain, (substate) => substate.get('tableInfo'));
 
+  const makeSelectDialogueVisible = () =>
+  createSelector(selectCrudTestDomain, (substate) => substate.get('dialogueVisible'));
+
+  const makeSelectAddItem = () =>
+  createSelector(selectCrudTestDomain, (substate) => substate.get('addItem'));
+
+  const makeSelectUpdateItem = () =>
+  createSelector(selectCrudTestDomain, (substate) => substate.get('updateItem'));
+  
+  const makeSelectDeleteId = () =>
+  createSelector(selectCrudTestDomain, (substate) => substate.get('deleteId'));
+  
+  const makeSelectSetMessage = () => 
+  createSelector(selectCrudTestDomain, (substate) => substate.get('setMessage'));
+  
+  const makeSelectSetErrMessage = () => 
+  createSelector(selectCrudTestDomain, (substate) => substate.get('setErrMessage'));
+
 export default makeSelectCrudTest;
-export { selectCrudTestDomain, makeSelectTableInfo };
+export { 
+  selectCrudTestDomain, 
+  makeSelectTableInfo, 
+  makeSelectDialogueVisible, 
+  makeSelectAddItem ,
+  makeSelectUpdateItem,
+  makeSelectSetMessage,
+  makeSelectSetErrMessage,
+  makeSelectDeleteId
+};
