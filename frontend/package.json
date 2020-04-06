@@ -162,7 +162,7 @@
     "invariant": "2.2.4",
     "ip": "1.1.5",
     "lodash": "4.17.10",
-    "minimist": "1.2.0",
+    "minimist": "1.2.3",
     "primeflex": "^1.0.0-rc.1",
     "primeicons": "^2.0.0",
     "primereact": "^3.2.0",
